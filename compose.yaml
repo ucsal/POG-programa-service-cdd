@@ -1,9 +1,19 @@
 services:
   postgres:
-    image: 'postgres:latest'
+    image: postgres:15
+    container_name: programa-service
+    restart: always
+
     environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=secret'
-      - 'POSTGRES_USER=myuser'
+      POSTGRES_DB: programa-service
+      POSTGRES_USER: service
+      POSTGRES_PASSWORD: postgre
+
     ports:
-      - '5432'
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
