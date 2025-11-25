@@ -1,8 +1,8 @@
 package com.example.disciplina_microservice.controller;
 
-import com.ted.controledisciplinas.controller.dto.request.ProgramaDTO;
-import com.ted.controledisciplinas.controller.dto.send.ProgramaResponseDTO;
-import com.ted.controledisciplinas.model.service.ProgramaService;
+import com.example.disciplina_microservice.controller.dto.request.ProgramaDTO;
+import com.example.disciplina_microservice.controller.dto.send.ProgramaResponseDTO;
+import com.example.disciplina_microservice.model.service.ProgramaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
