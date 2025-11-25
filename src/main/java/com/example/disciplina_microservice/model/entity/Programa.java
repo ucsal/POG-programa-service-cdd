@@ -16,10 +16,10 @@ public class Programa {
     private Long id;
 
     @ManyToOne
-    private Matriz matriz;
+    private Integer matriz;
 
     @OneToOne
-    private Disciplina disciplina;
+    private Integer disciplina;
 
     private String ementa;
     private String objetivos;

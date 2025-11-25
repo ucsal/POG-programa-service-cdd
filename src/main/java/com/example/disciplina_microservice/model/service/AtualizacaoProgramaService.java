@@ -71,7 +71,7 @@ public class AtualizacaoProgramaService {
         return new AtualizacaoProgramaSendDTO(
                 atualizacao.getId(),
                 atualizacao.getPrograma() != null ? atualizacao.getPrograma().getId() : null,
-                atualizacao.getProfessor() != null ? atualizacao.getProfessor().getId() : null,
+                atualizacao.getProfessor(),
                 atualizacao.getDescricaoAtualizacao(),
                 atualizacao.getDataFinalizacao()
         );

@@ -36,7 +36,7 @@ public class Bibliografia {
     private Programa programa;
 
     @ManyToOne
-    private Professor professor;
+    private Integer professor;
 
     public boolean isAtivo() {
         return programa != null && programa.isAtivo();

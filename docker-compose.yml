@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+
+  postgres-programa:
+    image: postgres:15
+    container_name: postgres-programa
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: programa
+    ports:
+      - "5433:5433"
+
+  programa-service:
+    container_name: programa-service
+    build: .
+
+    depends_on:
+      - postgres-programa
+    ports:
+      - "8082:8082"

@@ -16,8 +16,7 @@ public class AtualizacaoPrograma {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "professor_id", nullable = false)
-    private Professor professor;
+    private Long professor;
 
     @ManyToOne
     @JoinColumn(name = "programa_id", nullable = false)
