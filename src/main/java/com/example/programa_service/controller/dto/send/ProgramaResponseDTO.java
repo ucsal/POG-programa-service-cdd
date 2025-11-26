@@ -1,6 +1,6 @@
-package com.example.disciplina_microservice.controller.dto.send;
+package com.example.programa_service.controller.dto.send;
 
-import com.example.disciplina_microservice.model.entity.Programa;
+import com.example.programa_service.model.entity.Programa;
 
 import java.util.List;
 

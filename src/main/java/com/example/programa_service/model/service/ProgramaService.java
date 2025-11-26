@@ -1,9 +1,9 @@
-package com.example.disciplina_microservice.model.service;
+package com.example.programa_service.model.service;
 
-import com.example.disciplina_microservice.controller.dto.request.ProgramaDTO;
-import com.example.disciplina_microservice.controller.dto.send.ProgramaResponseDTO;
-import com.example.disciplina_microservice.model.entity.Programa;
-import com.example.disciplina_microservice.model.repository.ProgramaRepository;
+import com.example.programa_service.controller.dto.request.ProgramaDTO;
+import com.example.programa_service.controller.dto.send.ProgramaResponseDTO;
+import com.example.programa_service.model.entity.Programa;
+import com.example.programa_service.model.repository.ProgramaRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 

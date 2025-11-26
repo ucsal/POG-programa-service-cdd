@@ -1,4 +1,4 @@
-package com.example.disciplina_microservice.controller.dto.request;
+package com.example.programa_service.controller.dto.request;
 
 import java.time.LocalDate;
 import java.util.List;

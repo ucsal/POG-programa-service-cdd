@@ -1,4 +1,4 @@
-package com.example.disciplina_microservice.model.entity;
+package com.example.programa_service.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -15,8 +15,7 @@ public class AtualizacaoPrograma {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    private Long professor;
+    private Integer professorId;
 
     @ManyToOne
     @JoinColumn(name = "programa_id", nullable = false)

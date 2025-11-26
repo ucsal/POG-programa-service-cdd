@@ -1,8 +1,8 @@
-package com.example.disciplina_microservice.controller;
+package com.example.programa_service.controller;
 
-import com.example.disciplina_microservice.controller.dto.request.ProgramaDTO;
-import com.example.disciplina_microservice.controller.dto.send.ProgramaResponseDTO;
-import com.example.disciplina_microservice.model.service.ProgramaService;
+import com.example.programa_service.controller.dto.request.ProgramaDTO;
+import com.example.programa_service.controller.dto.send.ProgramaResponseDTO;
+import com.example.programa_service.model.service.ProgramaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

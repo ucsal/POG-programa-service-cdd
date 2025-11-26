@@ -1,8 +1,8 @@
-package com.example.disciplina_microservice.controller;
+package com.example.programa_service.controller;
 
-import com.example.disciplina_microservice.controller.dto.request.BibliografiaRequestDTO;
-import com.example.disciplina_microservice.controller.dto.send.BibliografiaSendDTO;
-import com.example.disciplina_microservice.model.service.BibliografiaService;
+import com.example.programa_service.controller.dto.request.BibliografiaRequestDTO;
+import com.example.programa_service.controller.dto.send.BibliografiaSendDTO;
+import com.example.programa_service.model.service.BibliografiaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

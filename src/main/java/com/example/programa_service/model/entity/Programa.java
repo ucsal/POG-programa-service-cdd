@@ -1,4 +1,4 @@
-package com.example.disciplina_microservice.model.entity;
+package com.example.programa_service.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -15,10 +15,8 @@ public class Programa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
     private Integer matriz;
 
-    @OneToOne
     private Integer disciplina;
 
     private String ementa;

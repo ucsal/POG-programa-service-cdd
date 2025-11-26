@@ -1,8 +1,8 @@
-package com.example.disciplina_microservice.controller;
+package com.example.programa_service.controller;
 
-import com.example.disciplina_microservice.controller.dto.request.AtualizacaoProgramaRequestDTO;
-import com.example.disciplina_microservice.controller.dto.send.AtualizacaoProgramaSendDTO;
-import com.example.disciplina_microservice.model.service.AtualizacaoProgramaService;
+import com.example.programa_service.controller.dto.request.AtualizacaoProgramaRequestDTO;
+import com.example.programa_service.controller.dto.send.AtualizacaoProgramaSendDTO;
+import com.example.programa_service.model.service.AtualizacaoProgramaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

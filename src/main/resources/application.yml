@@ -1,12 +1,13 @@
 server:
-  port: ${SERVER_PORT:8082}
+  port: ${ENV_SERVER_PORT:8082}
 
 spring:
   application:
     name: programa-service
-  main:
-    allow-bean-definition-overriding: true
-  
+
+  profiles:
+    active: ${ENV_SPRING_PROFILES_ACTIVE:dev}
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -17,4 +18,5 @@ spring:
 
   config:
     import: "optional:configserver:${ENV_CONFIG_SERVER_URL:http://config-server:8888}"
-    profile: ${ENV_SPRING_PROFILE:dev}
+
+

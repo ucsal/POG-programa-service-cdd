@@ -1,4 +1,4 @@
-package com.example.disciplina_microservice.model.entity;
+package com.example.programa_service.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -35,8 +35,7 @@ public class Bibliografia {
     @ManyToOne
     private Programa programa;
 
-    @ManyToOne
-    private Integer professor;
+    private Integer professorId;
 
     public boolean isAtivo() {
         return programa != null && programa.isAtivo();

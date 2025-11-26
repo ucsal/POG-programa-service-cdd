@@ -1,11 +1,11 @@
-package com.example.disciplina_microservice.model.service;
+package com.example.programa_service.model.service;
 
-import com.example.disciplina_microservice.controller.dto.request.BibliografiaRequestDTO;
-import com.example.disciplina_microservice.controller.dto.send.BibliografiaSendDTO;
-import com.example.disciplina_microservice.model.entity.Bibliografia;
-import com.example.disciplina_microservice.model.entity.Programa;
-import com.example.disciplina_microservice.model.repository.BibliografiaRepository;
-import com.example.disciplina_microservice.model.repository.ProgramaRepository;
+import com.example.programa_service.controller.dto.request.BibliografiaRequestDTO;
+import com.example.programa_service.controller.dto.send.BibliografiaSendDTO;
+import com.example.programa_service.model.entity.Bibliografia;
+import com.example.programa_service.model.entity.Programa;
+import com.example.programa_service.model.repository.BibliografiaRepository;
+import com.example.programa_service.model.repository.ProgramaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

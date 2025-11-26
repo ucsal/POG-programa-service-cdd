@@ -1,11 +1,11 @@
-package com.example.disciplina_microservice.model.service;
+package com.example.programa_service.model.service;
 
-import com.example.disciplina_microservice.controller.dto.request.AtualizacaoProgramaRequestDTO;
-import com.example.disciplina_microservice.controller.dto.send.AtualizacaoProgramaSendDTO;
-import com.example.disciplina_microservice.model.entity.AtualizacaoPrograma;
-import com.example.disciplina_microservice.model.entity.Programa;
-import com.example.disciplina_microservice.model.repository.AtualizacaoProgramaRepository;
-import com.example.disciplina_microservice.model.repository.ProgramaRepository;
+import com.example.programa_service.controller.dto.request.AtualizacaoProgramaRequestDTO;
+import com.example.programa_service.controller.dto.send.AtualizacaoProgramaSendDTO;
+import com.example.programa_service.model.entity.AtualizacaoPrograma;
+import com.example.programa_service.model.entity.Programa;
+import com.example.programa_service.model.repository.AtualizacaoProgramaRepository;
+import com.example.programa_service.model.repository.ProgramaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -71,7 +71,7 @@ public class AtualizacaoProgramaService {
         return new AtualizacaoProgramaSendDTO(
                 atualizacao.getId(),
                 atualizacao.getPrograma() != null ? atualizacao.getPrograma().getId() : null,
-                atualizacao.getProfessor(),
+                atualizacao.getProfessorId(),
                 atualizacao.getDescricaoAtualizacao(),
                 atualizacao.getDataFinalizacao()
         );

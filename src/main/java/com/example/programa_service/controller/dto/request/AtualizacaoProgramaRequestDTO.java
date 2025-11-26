@@ -1,9 +1,8 @@
-package com.example.disciplina_microservice.controller.dto.send;
+package com.example.programa_service.controller.dto.request;
 
 import java.time.LocalDateTime;
 
-public record AtualizacaoProgramaSendDTO(
-        Long id,
+public record AtualizacaoProgramaRequestDTO(
         Long programaId,
         Long professorId,
         String descricaoAtualizacao,
